@@ -187,3 +187,117 @@ document.querySelectorAll('.booking').forEach(button => {
     this.style.boxShadow = 'none';
   });
 });
+
+const testimonials = [
+  {
+      name: "Maudy Ayunda",
+      title: "Penyanyi & Aktivis Pendidikan",
+      quote: "Sungguh pengalaman kuliner yang memanjakan lidah dan hati. Rasanya autentik dan disajikan dengan penuh cinta. Cocok dinikmati saat santai ataupun formal. Highly recommended!",
+      image: "./assets/maudy.jpg"
+  },
+  {
+      name: "Reza Rahadian",
+      title: "Aktor",
+      quote: "Saya sering mencicipi berbagai makanan saat syuting, tapi yang satu ini punya rasa yang istimewa. Bumbunya meresap, dan plating-nya bikin selera makan meningkat!",
+      image: "./assets/reza.jpg"
+  },
+  {
+      name: "Najwa Shihab",
+      title: "Jurnalis & Presenter",
+      quote: "Detail rasa dan penyajian makanan ini membuat saya merasa dihargai sebagai konsumen. Setiap gigitan terasa seperti cerita yang sedang diceritakan melalui rasa.",
+      image: "./assets/najwa-shihab.png"
+  },
+  {
+      name: "Jerome Polin",
+      title: "Content Creator & Edukator",
+      quote: "Bukan hanya enak, tapi juga punya cita rasa lokal yang otentik. Pas banget buat saya yang suka eksplorasi makanan nusantara. Wajib dicoba!",
+      image: "./assets/jerome.jpg"
+  },
+  {
+      name: "Cinta Laura Kiehl",
+      title: "Aktris & Model Internasional",
+      quote: "Makanan ini bukan cuma lezat, tapi juga tampil menarik untuk difoto. Cocok banget buat lifestyle saya yang aktif di media sosial. Love it!",
+      image: "./assets/cinta-laura.jpg"
+  }
+];
+
+let currentSlide = 0;
+let autoSlideInterval;
+
+function createSlides() {
+  const sliderWrapper = document.getElementById('sliderWrapper');
+  const dotsContainer = document.getElementById('dotsContainer');
+  
+  testimonials.forEach((testimonial, index) => {
+      const slide = document.createElement('div');
+      slide.className = 'slide';
+      slide.innerHTML = `
+          <div class="slide-content">
+              <p>"${testimonial.quote}"</p>
+              <div class="author-info">
+                  <p class="author-name">${testimonial.name}</p>
+                  <p class="author-title">${testimonial.title}</p>
+              </div>
+              <div class="stars">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+              </div>
+          </div>
+          <img src="${testimonial.image}" alt="${testimonial.name}">
+      `;
+      sliderWrapper.appendChild(slide);
+      
+      const dot = document.createElement('div');
+      dot.className = `dot ${index === 0 ? 'active' : ''}`;
+      dot.addEventListener('click', () => goToSlide(index));
+      dotsContainer.appendChild(dot);
+  });
+}
+
+function updateSlider() {
+  const sliderWrapper = document.getElementById('sliderWrapper');
+  const dots = document.querySelectorAll('.dot');
+  
+  sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+  
+  dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+  });
+}
+
+function goToSlide(slideIndex) {
+  currentSlide = slideIndex;
+  updateSlider();
+  resetAutoSlide();
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % testimonials.length;
+  updateSlider();
+}
+
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide, 5000);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  createSlides();
+  updateSlider();
+  startAutoSlide();
+});
+
+document.querySelector('.slider-container').addEventListener('mouseenter', () => {
+  clearInterval(autoSlideInterval);
+});
+
+document.querySelector('.slider-container').addEventListener('mouseleave', () => {
+  startAutoSlide();
+});
