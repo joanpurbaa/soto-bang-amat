@@ -48,7 +48,7 @@ header nav ul li a {
 	font-size: 1.2rem;
 }
 
-.booking {
+.bookingButton {
 	color: white;
 	display: flex;
 	align-items: center;
@@ -424,6 +424,10 @@ blockquote {
 .slider-wrapper {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-ms-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 }
 
 .slide {
@@ -435,7 +439,6 @@ blockquote {
 	gap: 50px;
 	background: rgba(255, 255, 255, 0.05);
 	border-radius: 10px;
-	/* margin: 0 10px; */
 }
 
 .slide-content {
@@ -520,4 +523,75 @@ blockquote {
 
 .dot.active {
 	background: var(--primary);
+}
+
+.bookingSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+	align-items: center;
+	color: white;
+	background: #1f1f1f;
+	padding: 70px 0px;
+}
+
+.bookingSection h1 {
+	color: #ffb300;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
+
+.bookingSection > p {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.bookingSection > div {
+  width: 50%;
+  margin-top: 50px;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.bookingSection img {
+	width: 400px;
+}
+
+.bookingSection form {
+	width: 100%;
+}
+
+.bookingSection ul {
+	list-style: none;
+}
+
+.bookingSection ul li {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.bookingSection input {
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 13px;
+	width: 100%;
+	background-color: #e8eeef;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+	margin-bottom: 30px;
+}
+
+.bookingSection button {
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	padding: 13px;
+	background: var(--primary);
+	border: 0;
+	padding: 15px;
 }

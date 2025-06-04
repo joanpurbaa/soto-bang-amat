@@ -27,7 +27,7 @@
           <a href="">Lokasi</a>
         </li>
         <li>
-          <a class="booking">
+          <a class="bookingButton">
             <span>Booking</span>
             <img src="/assets/arrow-up-right.svg" alt="">
           </a>
@@ -42,7 +42,7 @@
         <p>Dari kuah gurih sampai sambal pedas, kami siap manjakan lidahmu dengan cita rasa soto yang menggoda selera.
         </p>
       </div>
-      <a class="booking">
+      <a class="bookingButton">
         <span>Booking</span>
         <img src="/assets/arrow-up-right.svg" alt="">
       </a>
@@ -270,8 +270,36 @@
     </div>
 
     <div class="dots-container" id="dotsContainer"></div>
+  </section>
+  <section class="bookingSection">
+    <h1>BOOKING</h1>
+    <p>Booking <span style="color: #ffb300;">meja</span> untuk nanti!</p>
 
-    <script src="/app.js"></script>
+    <div>
+      <img src="./assets/booking.jpg" alt="">
+      <form>
+        <ul>
+          <li>
+            <label for="">Nama lengkap</label>
+            <input type="text" placeholder="Masukkn nama lengkap">
+          </li>
+          <li>
+            <label for="">Email</label>
+            <input type="text" placeholder="Masukkn email">
+          </li>
+          <li>
+            <label for="">No Telepon</label>
+            <input type="text" placeholder="Masukkn nomor telepon">
+          </li>
+          <li>
+            <button onclick="alert('Kamu sudah membooking')">Booking sekarang</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
+  <script src="/app.js"></script>
 </body>
 
 </html>
