@@ -301,3 +301,4 @@ document.querySelector('.slider-container').addEventListener('mouseenter', () =>
 document.querySelector('.slider-container').addEventListener('mouseleave', () => {
   startAutoSlide();
 });
+

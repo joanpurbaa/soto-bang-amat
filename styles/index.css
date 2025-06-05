@@ -129,7 +129,7 @@ header nav ul li:last-child a img {
 	flex-direction: column;
 	align-items: center;
 	color: white;
-	padding: 70px 250px;
+	padding: 150px 250px;
 	gap: 50px;
 }
 
@@ -313,7 +313,7 @@ blockquote {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 70px 400px;
+	padding: 150px 400px;
 }
 
 .menu ul {
@@ -368,7 +368,7 @@ blockquote {
 	flex-direction: column;
 	align-items: center;
 	background: #1f1f1f;
-	padding: 70px 0px;
+	padding: 150px 0px;
 	gap: 30px;
 	transition: color 0.3s ease;
 	transition-delay: 50ms;
@@ -526,13 +526,13 @@ blockquote {
 }
 
 .bookingSection {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 	align-items: center;
 	color: white;
 	background: #1f1f1f;
-	padding: 70px 0px;
+	padding: 150px 0px;
 }
 
 .bookingSection h1 {
@@ -547,8 +547,8 @@ blockquote {
 }
 
 .bookingSection > div {
-  width: 50%;
-  margin-top: 50px;
+	width: 50%;
+	margin-top: 50px;
 	display: flex;
 	align-items: center;
 	gap: 40px;
@@ -594,4 +594,73 @@ blockquote {
 	background: var(--primary);
 	border: 0;
 	padding: 15px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	color: white;
+	padding: 70px 400px;
+}
+
+.contact h1 {
+	color: #ffb300;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
+
+.contact > p {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.contact > div {
+	width: 100%;
+}
+
+.contact > div > iframe {
+	width: 100%;
+}
+
+.contact > div > div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 30px;
+	margin: 20px auto;
+}
+
+.contact > div > div > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+	background: #424242;
+  padding: 20px;
+}
+
+.contact > div > div > div img {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  background: var(--primary);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.contact > div > div > div div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer {
+  background: #1f1f1f;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
 }

@@ -7,6 +7,7 @@
   <title>Soto Bang Amat</title>
   <link rel="stylesheet" href="styles/index.css">
   <link rel="icon" href="/assets/logo.svg">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,19 +16,16 @@
     <nav>
       <ul>
         <li>
-          <a href="">Tentang Kami</a>
+          <a href="#about">Tentang Kami</a>
         </li>
         <li>
-          <a href="">Menu</a>
+          <a href="#menu">Menu</a>
         </li>
         <li>
-          <a href="">Galeri</a>
+          <a href="#galeri">Galeri</a>
         </li>
         <li>
-          <a href="">Lokasi</a>
-        </li>
-        <li>
-          <a class="bookingButton">
+          <a href="#bookingSection" class="bookingButton">
             <span>Booking</span>
             <img src="/assets/arrow-up-right.svg" alt="">
           </a>
@@ -42,22 +40,22 @@
         <p>Dari kuah gurih sampai sambal pedas, kami siap manjakan lidahmu dengan cita rasa soto yang menggoda selera.
         </p>
       </div>
-      <a class="bookingButton">
+      <a href="#bookingSection" class="bookingButton">
         <span>Booking</span>
         <img src="/assets/arrow-up-right.svg" alt="">
       </a>
     </div>
     <img class="hero-image" src="/assets/soto.png" alt="">
   </section>
-  <section class="about">
+  <section id="about" class="about">
     <h1>TENTANG <span style="color: #ffb300;">KAMI</span></h1>
     <div>
       <div>
-        <img src="./assets/soto2.jpg" alt="">
-        <blockquote><i>"Satu sendok <span style="color: #ffb300;">soto</span> bisa membawa pulang <span
-              style="color: #ffb300;">kenangan</span> akan rumah dan kehangatan keluarga."</i>
+        <img data-aos="fade-down-right" src="./assets/soto2.jpg" alt="">
+        <blockquote data-aos="fade-up-right"><i>"Satu sendok <span style="color: #ffb300;">soto</span> bisa membawa
+            pulang <span style="color: #ffb300;">kenangan</span> akan rumah dan kehangatan keluarga."</i>
       </div>
-      <div>
+      <div data-aos="fade-down-left">
         <p>Sudah puluhan tahun kami menyajikan kehangatan dalam semangkuk soto.</p>
         <ul style="list-style-type: none;">
           <li>
@@ -77,7 +75,7 @@
           Mulai dari kuah, sambal,
           sampai kerupuk semuanya diracik dengan sepenuh hati untuk menghadirkan cita rasa khas Nusantara yang tak
           tergantikan.</p>
-        <iframe height="400" src="https://www.youtube.com/embed/Bop8EtOMrUs?si=LfM0kz_j0SmybRan"
+        <iframe data-aos="fade-up-left" height="400" src="https://www.youtube.com/embed/Bop8EtOMrUs?si=LfM0kz_j0SmybRan"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -85,7 +83,7 @@
     </div>
   </section>
   <section class="reason">
-    <div>
+    <div data-aos="fade-up" data-aos-duration="800">
       <h1>Kenapa Pilih Soto Bang Amat?</h1>
       <p>Soto bukan sekadar makanan—di Bang Amat, setiap mangkok adalah warisan rasa. Dengan kuah yang kaya rempah,
         daging yang
@@ -95,7 +93,7 @@
         <img src="./assets/chevron-right.svg" alt="">
       </a>
     </div>
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1000">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -111,7 +109,7 @@
       <h1>Resep Warisan Keluarga</h1>
       <p>Rasa autentik dari resep turun-temurun yang dijaga sejak puluhan tahun.</p>
     </div>
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1200">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -124,7 +122,7 @@
       <h1>Bahan Pilihan Berkualitas</h1>
       <p>Menggunakan bahan segar lokal terbaik, tanpa pengawet buatan.</p>
     </div>
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1400">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -160,7 +158,7 @@
       </div>
     </div>
   </section>
-  <section class="menu">
+  <section id="menu" class="menu">
     <h1>MENU <span style="color: #ffb300;">KAMI</span></h1>
     <nav>
       <ul>
@@ -225,38 +223,38 @@
       </div>
     </div>
   </section>
-  <section class="galeri">
+  <section id="galeri" class="galeri">
     <h1 style="color: #ffb300;">GALERI</h1>
     <p>Tangkapan moment <span style="color: #ffb300;">lezat</span> bersama kami</p>
     <div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="800">
         <img src="./assets/galeri1.jpg" alt="">
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1000">
         <img src="./assets/galeri2.jpg" alt="">
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1200">
         <img src="./assets/galeri3.jpg" alt="">
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1400">
         <img src="./assets/galeri4.jpg" alt="">
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1600">
         <img src="./assets/galeri5.jpg" alt="">
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1800">
         <img src="./assets/galeri6.jpg" alt="">
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="2000">
         <img src="./assets/galeri7.jpg" alt="">
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="2200">
         <img src="./assets/galeri8.jpg" alt="">
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="2400">
         <img src="./assets/galeri9.jpg" alt="">
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="2600">
         <img src="./assets/galeri10.jpg" alt="">
       </div>
     </div>
@@ -271,13 +269,13 @@
 
     <div class="dots-container" id="dotsContainer"></div>
   </section>
-  <section class="bookingSection">
+  <section id="bookingSection" class="bookingSection">
     <h1>BOOKING</h1>
     <p>Booking <span style="color: #ffb300;">meja</span> untuk nanti!</p>
 
     <div>
-      <img src="./assets/booking.jpg" alt="">
-      <form>
+      <img data-aos="fade-right" src="./assets/booking.jpg" alt="">
+      <form data-aos="fade-left">
         <ul>
           <li>
             <label for="">Nama lengkap</label>
@@ -298,8 +296,56 @@
       </form>
     </div>
   </section>
+  <section class="contact">
+    <h1>KONTAK</h1>
+    <p>Butuh bantuan? <span style="color: #ffb300;">kontak</span> kami!</p>
+
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7966.350412008863!2d114.61054843549812!3d-3.306794535078459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de4238e4566331d%3A0x34083a92d1c5d264!2sSoto%20Bang%20Amat%20-%20Banjarmasin!5e0!3m2!1sid!2sid!4v1749141084235!5m2!1sid!2sid"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div>
+        <div>
+          <img src="./assets/map-pin.svg" alt="">
+          <div>
+            <h3><b>Alamat</b></h3>
+            <p>Jl. Banua Anyar No.6, Benua Anyar, Kec. Banjarmasin Tim.</p>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/phone.svg" alt="">
+          <div>
+            <h3><b>Telepon</b></h3>
+            <p>+62 822 7533 8090</p>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/mail.svg" alt="">
+          <div>
+            <h3><b>Email</b></h3>
+            <p>sotobangamat@gmail.com</p>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/clock.svg" alt="">
+          <div>
+            <h3><b>Jam operasi</b></h3>
+            <p><b>Senin-Minggu</b> : 10 - 23</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; Copyright <b style="color: #ffb300;">Soto Bang Amat</b> All Rights Reserved</p>
+  </footer>
 
   <script src="/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
