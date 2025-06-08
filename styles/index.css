@@ -13,7 +13,7 @@
 }
 
 body {
-	width: 100dvw;
+	width: 100%;
 	height: 100dvh;
 	background: #272727;
 	overflow-x: hidden;
@@ -347,6 +347,7 @@ blockquote {
 	margin-top: 50px;
 	width: 100%;
 	display: flex;
+	justify-content: center;
 	gap: 100px;
 	flex-wrap: wrap;
 }
@@ -633,34 +634,208 @@ blockquote {
 }
 
 .contact > div > div > div {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
 	background: #424242;
-  padding: 20px;
+	padding: 20px;
 }
 
 .contact > div > div > div img {
-  width: 60px;
-  height: 60px;
-  padding: 15px;
-  background: var(--primary);
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	padding: 15px;
+	background: var(--primary);
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
 }
 
 .contact > div > div > div div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }
 
 footer {
-  background: #1f1f1f;
-  color: white;
-  padding: 30px 0;
-  text-align: center;
+	background: #1f1f1f;
+	color: white;
+	padding: 30px 0;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1630px) {
+	header,
+	.hero,
+	.contact {
+		padding: 20px 100px;
+	}
+
+	.about {
+		padding: 150px 100px;
+	}
+
+	.reason {
+		padding: 70px 100px;
+	}
+
+	.count-up {
+		padding: 200px 250px;
+	}
+
+	.menu {
+		padding: 150px 100px;
+	}
+
+	.galeri img {
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	header,
+	.hero,
+	.contact {
+		padding: 20px 50px;
+	}
+
+	.about {
+		padding: 150px 50px;
+	}
+
+	.reason {
+		padding: 70px 50px;
+	}
+
+	.count-up {
+		padding: 200px 100px;
+	}
+
+	.menu {
+		padding: 150px 50px;
+	}
+
+	.bookingSection > div {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	header nav ul li a {
+		font-size: 1rem;
+	}
+
+	.hero div:first-child {
+		width: 500px;
+	}
+
+	.hero h1 {
+		font-size: 2rem;
+	}
+
+	.hero p {
+		font-size: 1rem;
+	}
+
+	.hero .hero-image {
+		width: 400px;
+	}
+
+	.galeri img {
+		width: 350px;
+	}
+
+	blockquote {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	.about div div:last-child {
+		font-size: 1rem;
+	}
+
+	.about div div:last-child ul li img {
+		width: 20px;
+	}
+
+	.reason > div {
+		padding: 20px;
+	}
+
+	.reason div:first-child h1 {
+		font-size: 1.5rem;
+	}
+
+	.reason div:first-child p,
+	.reason div:first-child a {
+		font-size: 1rem;
+	}
+
+	.reason div:nth-child(2),
+	.reason div:nth-child(3),
+	.reason div:nth-child(4) {
+		width: 25%;
+	}
+
+	.reason > div:nth-child(2) h1,
+	.reason > div:nth-child(3) h1,
+	.reason > div:nth-child(4) h1 {
+		font-size: 1.2rem;
+	}
+
+	.count-up > div div {
+		font-size: 1.2rem;
+	}
+
+	.menu li,
+	.menu div h1,
+	.menu h3 {
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.hero div:first-child {
+		width: 400px;
+	}
+
+	.about > div {
+		flex-direction: column;
+		width: 800px;
+	}
+
+	.about > div > div:nth-child(2) iframe {
+		order: -1;
+	}
+
+	.reason {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 70px 0px;
+	}
+
+	.reason div:nth-child(1),
+	.reason div:nth-child(2),
+	.reason div:nth-child(3),
+	.reason div:nth-child(4) {
+		width: 40%;
+		height: 300px;
+	}
+
+	.galeri img {
+		width: 300px;
+	}
+
+	.bookingSection > div {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.galeri > div {
+		column-count: 2;
+		column-gap: 20px;
+	}
 }

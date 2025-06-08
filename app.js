@@ -43,7 +43,7 @@ function createCountUpObserver() {
   const countUpSection = document.querySelector('.count-up');
   const countElements = countUpSection.querySelectorAll('h1');
   
-  const targets = [100, 250, 1200, 99]; 
+  const targets = [100, 250, 1200, 100]; 
   
   const counters = Array.from(countElements).map((element, index) => {
     return new CountUp(element, targets[index], 2000 + (index * 200)); 
@@ -100,8 +100,8 @@ function initMenuFilter() {
   const menuCards = document.querySelectorAll(".menu > div > div");
   
   
-  const foodItems = ["Soto", "Lalapan Nila", "Rawon", "Sate Ayam", "Iga Sapi"];
-  const drinkItems = ["Es Teh", "Jus Jeruk", "Jus Nanas", "Jus Alpukat", "Jus Mangga"];
+  const foodItems = ["Soto", "Lalapan Nila", "Rawon", "Sate Ayam", "Iga Sapi", "Opor Ayam"];
+  const drinkItems = ["Es Teh", "Jus Jeruk", "Jus Nanas", "Jus Alpukat", "Jus Mangga", "Jus Wortel"];
   
   
   menuItems[0].classList.add("active");
@@ -113,12 +113,9 @@ function initMenuFilter() {
     item.addEventListener("click", (e) => {
       e.preventDefault();
       
-      
       menuItems.forEach(i => i.classList.remove("active"));
       
-      
       item.classList.add("active");
-      
       
       if (index === 0) { 
         filterMenuItems("makanan");
