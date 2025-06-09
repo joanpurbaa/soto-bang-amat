@@ -224,6 +224,11 @@ body.humburgerActive header nav {
 	}
 }
 
+.chevron {
+  width: 30px;
+  height: 30px;
+}
+
 .hero .hero-image {
 	width: 600px;
 	animation: hero-image-animation 2s ease-in-out infinite;
@@ -383,7 +388,7 @@ blockquote {
 
 .count-up {
 	position: relative;
-	background-image: url("../assets/foods.jpg");
+	background-image: url("../assets/foods.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -1072,9 +1077,7 @@ footer {
 	}
 }
 
-/* Media Query untuk Mobile - 700px ke bawah */
 @media only screen and (max-width: 700px) {
-	/* Header Responsive */
 	.responsiveHeader {
 		padding: 15px 20px;
 	}
@@ -1083,7 +1086,6 @@ footer {
 		width: 60px;
 	}
 
-	/* Hero Section */
 	.hero {
 		padding: 0px 20px;
 		height: auto;
@@ -1118,7 +1120,6 @@ footer {
 		width: 20px !important;
 	}
 
-	/* About Section */
 	.about {
 		padding: 100px 20px;
 		gap: 30px;
@@ -1147,7 +1148,6 @@ footer {
 		height: 250px;
 	}
 
-	/* Reason Section */
 	.reason {
 		padding: 80px 20px;
 		flex-direction: column;
@@ -1196,7 +1196,6 @@ footer {
 		height: 60px;
 	}
 
-	/* Count Up Section */
 	.count-up {
 		padding: 100px 20px;
 	}
@@ -1217,7 +1216,6 @@ footer {
 		font-size: 1.5rem;
 	}
 
-	/* Menu Section */
 	.menu {
 		padding: 100px 20px;
 	}
@@ -1253,7 +1251,6 @@ footer {
 		font-size: 0.9rem;
 	}
 
-	/* Gallery Section */
 	.galeri {
 		padding: 100px 20px;
 	}
@@ -1272,7 +1269,6 @@ footer {
 		width: 100%;
 	}
 
-	/* Testimoni Section */
 	.testimoni {
 		padding: 80px 20px;
 	}
@@ -1287,13 +1283,13 @@ footer {
 		height: 150px;
 	}
 
-  .slider-wrapper .slide {
-    gap: 10px;
-  }
+	.slider-wrapper .slide {
+		gap: 10px;
+	}
 
-  .slider-wrapper .slide .slide-content {
-    gap: 15px;
-  }
+	.slider-wrapper .slide .slide-content {
+		gap: 15px;
+	}
 
 	.slide-content > p {
 		font-size: 1rem;
@@ -1312,12 +1308,11 @@ footer {
 		height: 15px;
 	}
 
-  .dots-container .dot {
-    width: 10px;
-    height: 10px;
-  }
+	.dots-container .dot {
+		width: 10px;
+		height: 10px;
+	}
 
-	/* Booking Section */
 	.bookingSection {
 		padding: 100px 20px;
 	}
@@ -1346,7 +1341,6 @@ footer {
 		font-size: 0.9rem;
 	}
 
-	/* Contact Section */
 	.contact {
 		padding: 80px 20px;
 	}
@@ -1379,13 +1373,11 @@ footer {
 		font-size: 0.8rem;
 	}
 
-	/* Footer */
 	footer {
 		padding: 20px 15px;
 		font-size: 0.9rem;
 	}
 
-	/* Navigation responsive fix */
 	.responsiveHeader nav ul {
 		gap: 30px;
 		padding: 20px;

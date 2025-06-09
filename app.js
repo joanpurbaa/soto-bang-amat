@@ -190,31 +190,31 @@ const testimonials = [
       name: "Maudy Ayunda",
       title: "Penyanyi & Aktivis Pendidikan",
       quote: "Sungguh pengalaman kuliner yang memanjakan lidah dan hati. Rasanya autentik dan disajikan dengan penuh cinta. Cocok dinikmati saat santai ataupun formal. Highly recommended!",
-      image: "./assets/maudy.jpg"
+      image: "./assets/maudy.webp"
   },
   {
       name: "Reza Rahadian",
       title: "Aktor",
       quote: "Saya sering mencicipi berbagai makanan saat syuting, tapi yang satu ini punya rasa yang istimewa. Bumbunya meresap, dan plating-nya bikin selera makan meningkat!",
-      image: "./assets/reza.jpg"
+      image: "./assets/reza.webp"
   },
   {
       name: "Najwa Shihab",
       title: "Jurnalis & Presenter",
       quote: "Detail rasa dan penyajian makanan ini membuat saya merasa dihargai sebagai konsumen. Setiap gigitan terasa seperti cerita yang sedang diceritakan melalui rasa.",
-      image: "./assets/najwa-shihab.png"
+      image: "./assets/najwa-shihab.webp"
   },
   {
       name: "Jerome Polin",
       title: "Content Creator & Edukator",
       quote: "Bukan hanya enak, tapi juga punya cita rasa lokal yang otentik. Pas banget buat saya yang suka eksplorasi makanan nusantara. Wajib dicoba!",
-      image: "./assets/jerome.jpg"
+      image: "./assets/jerome.webp"
   },
   {
       name: "Cinta Laura Kiehl",
       title: "Aktris & Model Internasional",
       quote: "Makanan ini bukan cuma lezat, tapi juga tampil menarik untuk difoto. Cocok banget buat lifestyle saya yang aktif di media sosial. Love it!",
-      image: "./assets/cinta-laura.jpg"
+      image: "./assets/cinta-laura.webp"
   }
 ];
 
