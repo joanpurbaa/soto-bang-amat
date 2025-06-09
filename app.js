@@ -299,3 +299,8 @@ document.querySelector('.slider-container').addEventListener('mouseleave', () =>
   startAutoSlide();
 });
 
+document.querySelectorAll(".humburger").forEach(function (el) {
+  el.addEventListener("click", function () {
+    document.body.classList.toggle("humburgerActive");
+  });
+});
